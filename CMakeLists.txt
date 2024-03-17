@@ -29,14 +29,14 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 
 # Compile the libraries
 # See: https://cmake.org/cmake/help/latest/command/add_subdirectory.html
-# add_subdirectory(lib/libdyn)
-# add_subdirectory(lib/libsta)
+add_subdirectory(lib/libdyn)
+add_subdirectory(lib/libsta)
 
 # Include headers in lib
 # See: https://cmake.org/cmake/help/latest/command/target_include_directories.html
-# target_include_directories(${PROJECT_NAME} PUBLIC lib/libdyn/include)
-# target_include_directories(${PROJECT_NAME} PUBLIC lib/libsta/include)
+target_include_directories(${PROJECT_NAME} PUBLIC lib/libdyn/include)
+target_include_directories(${PROJECT_NAME} PUBLIC lib/libsta/include)
 
 # Link the libraries
 # See: https://cmake.org/cmake/help/latest/command/target_link_libraries.html
-# target_link_libraries(${PROJECT_NAME} StatiCLib DynamicLib)
+target_link_libraries(${PROJECT_NAME} StatiCLib DynamiCLib)
