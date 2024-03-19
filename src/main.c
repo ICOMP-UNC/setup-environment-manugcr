@@ -5,11 +5,21 @@
 
 int main()
 {
-    printf("Hello, World!\n");
-    greetings();
+    printf("---------------------------------------------\n");
+    printf(" Hello, World! - OSII Lab0 Enviroment setup.\n");
+    printf("---------------------------------------------\n\n");
 
-    printf("Calling shared lib: %d\n", shared_lib_function("Hello from main.c!"));
-    printf("Calling static lib: %d\n", static_lib_function("Bye from main.c!"));
+    // Call the function from the include library
+    greetings();
+    printf("\n");
+
+    // Call the function from the shared library
+    printf("The lenght of the message is: %d\n", shared_lib_function("Hello from main.c!"));
+    printf("\n");
+
+    // Call the function from the static library
+    printf("The lenght of the message is: %d\n", static_lib_function("Bye from main.c!"));
+    printf("\n");
 
     return 0;
 }
