@@ -1,7 +1,5 @@
 #!/bin/bash -e
 
-# This script is used to run the project with tests.
-
 echo ""
 
 if [ -d "./build" ]; then
@@ -15,8 +13,13 @@ else
 fi
 
 echo "-> Compiling and building project..."
-cd build && cmake -GNinja -DRUN_TEST=1 .. && ninja
+cd build && cmake -GNinja -DRUN_COVERAGE=1 .. && ninja
+# cd build && cmake -GNinja -DRUN_TEST=1 .. && ninja
 
 echo "-> Running tests..."
 echo ""
 ctest --test-dir tests/ -VV
+
+echo ""
+echo "-> Testing coverage"
+gcovr -r /home/manu/Desktop/setup-environment-manugcr

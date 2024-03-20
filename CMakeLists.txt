@@ -27,7 +27,7 @@ include_directories(include)
 include(FetchContent)
 
 # In this example we are going to use Unity to download and test our program
-set(UNITY_GIT_UTL "https://github.com/ThrowTheSwitch/Unity.git")
+set(UNITY_GIT_UTL https://github.com/ThrowTheSwitch/Unity.git)
 
 # Enable debug
 set(FETCHCONTEN_QUIET OFF)
