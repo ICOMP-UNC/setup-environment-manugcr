@@ -1,7 +1,5 @@
 #!/bin/bash -e
 
-# This script is used to run the project.
-
 echo ""
 
 if [ -d "./build" ]; then
