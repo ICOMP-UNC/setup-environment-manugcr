@@ -1,5 +1,5 @@
-#include <unity.h>
 #include <logic.h>
+#include <unity.h>
 
 void test_logic_add(void)
 {
@@ -25,14 +25,12 @@ void test_logic_divide(void)
     TEST_ASSERT_NOT_EQUAL(4, divide(6, 2));
 }
 
-void setUp(void) 
+void setUp(void)
 {
-
 }
 
-void tearDown(void) 
+void tearDown(void)
 {
-
 }
 
 int main(void)
