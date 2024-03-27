@@ -5,4 +5,4 @@
  * @param msg Message to print
  * @return The length of the message
  */
-int shared_lib_function(char* msg);
+int shared_lib_function(char *msg);
