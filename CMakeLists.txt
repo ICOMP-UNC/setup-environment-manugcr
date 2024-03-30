@@ -27,14 +27,14 @@ include_directories(include)
 include(FetchContent)
 
 # In this example we are going to use Unity to download and test our program
-set(UNITY_GIT_UTL "https://github.com/ThrowTheSwitch/Unity.git")
+set(UNITY_GIT_URL https://github.com/ThrowTheSwitch/Unity.git)
 
 # Enable debug
-set(FETCHCONTEN_QUIET OFF)
+set(FETCHCONTENT_QUIET OFF)
 
 FetchContent_Declare(
   Unity
-  GIT_REPOSITORY ${UNITY_GIT_UTL}
+  GIT_REPOSITORY ${UNITY_GIT_URL}
   SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/Unity
   UPDATE_COMMAND "" # Disable update
 )

@@ -42,6 +42,6 @@ int multiply(int a, int b)
 double divide(int a, int b)
 {
     if (b != 0)
-        return (double) a / b;
+        return (double)a / b;
     return -1.0;
 }
